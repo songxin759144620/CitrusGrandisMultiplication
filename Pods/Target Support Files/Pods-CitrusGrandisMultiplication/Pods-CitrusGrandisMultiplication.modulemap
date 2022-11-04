@@ -1,0 +1,6 @@
+module Pods_CitrusGrandisMultiplication {
+  umbrella header "Pods-CitrusGrandisMultiplication-umbrella.h"
+
+  export *
+  module * { export * }
+}

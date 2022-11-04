@@ -1,0 +1,23 @@
+PODS:
+  - SnapKit (5.6.0)
+  - XYZKit_master (1.0.0):
+    - XYZKit_master/Core (= 1.0.0)
+  - XYZKit_master/Core (1.0.0)
+
+DEPENDENCIES:
+  - SnapKit
+  - XYZKit_master
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SnapKit
+  https://github.com/DFTT/XYZPodspecs.git:
+    - XYZKit_master
+
+SPEC CHECKSUMS:
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  XYZKit_master: 8aac5fdecc8328e8174985ccc799b0d22cea1457
+
+PODFILE CHECKSUM: 4ed2619fd8591bf21d0815b11c69ae7fbe8240ff
+
+COCOAPODS: 1.11.3

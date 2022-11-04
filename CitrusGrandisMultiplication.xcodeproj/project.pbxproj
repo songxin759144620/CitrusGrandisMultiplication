@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA411A9B163670059390D1C1 /* libPods-CitrusGrandisMultiplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FE154F53EFA9EC3359CF5E /* libPods-CitrusGrandisMultiplication.a */; };
+		C6AC7ECB29154078001995BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7ECA29154078001995BF /* AppDelegate.swift */; };
+		C6AC7ECF29154078001995BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7ECE29154078001995BF /* ViewController.swift */; };
+		C6AC7ED229154078001995BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7ED029154078001995BF /* Main.storyboard */; };
+		C6AC7ED429154079001995BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7ED329154079001995BF /* Assets.xcassets */; };
+		C6AC7ED729154079001995BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7ED529154079001995BF /* LaunchScreen.storyboard */; };
+		C6AC7EDF29154187001995BF /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7EDE29154187001995BF /* Macro.swift */; };
+		C6AC7EEF291542D2001995BF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7EE2291542D2001995BF /* MBProgressHUD.m */; };
+		C6AC7EF0291542D2001995BF /* MBHUD_Success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7EE4291542D2001995BF /* MBHUD_Success@2x.png */; };
+		C6AC7EF1291542D2001995BF /* MBHUD_Info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7EE5291542D2001995BF /* MBHUD_Info@3x.png */; };
+		C6AC7EF2291542D2001995BF /* MBHUD_Info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7EE6291542D2001995BF /* MBHUD_Info@2x.png */; };
+		C6AC7EF3291542D2001995BF /* MBHUD_Success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7EE7291542D2001995BF /* MBHUD_Success@3x.png */; };
+		C6AC7EF4291542D2001995BF /* MBHUD_Error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7EE8291542D2001995BF /* MBHUD_Error@2x.png */; };
+		C6AC7EF5291542D2001995BF /* MBHUD_Warn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7EE9291542D2001995BF /* MBHUD_Warn@3x.png */; };
+		C6AC7EF6291542D2001995BF /* MBHUD_Warn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7EEA291542D2001995BF /* MBHUD_Warn@2x.png */; };
+		C6AC7EF7291542D2001995BF /* MBHUD_Error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7EEB291542D2001995BF /* MBHUD_Error@3x.png */; };
+		C6AC7EF8291542D2001995BF /* MBProgressHUD+XM.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7EEC291542D2001995BF /* MBProgressHUD+XM.m */; };
+		C6AC7F032915432F001995BF /* AQTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7EFF2915432F001995BF /* AQTabItemView.swift */; };
+		C6AC7F042915432F001995BF /* AQTabItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7F002915432F001995BF /* AQTabItemModel.swift */; };
+		C6AC7F052915432F001995BF /* AQTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7F012915432F001995BF /* AQTabbar.swift */; };
+		C6AC7F062915432F001995BF /* AQTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7F022915432F001995BF /* AQTabbarViewController.swift */; };
+		C6AC7F0F29154514001995BF /* TabViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7F0E29154514001995BF /* TabViewController1.swift */; };
+		C6AC7F112915451B001995BF /* TabViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7F102915451B001995BF /* TabViewController2.swift */; };
+		C6AC7F1329154521001995BF /* TabViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7F1229154521001995BF /* TabViewController3.swift */; };
+		C6AC7F1929154B3C001995BF /* AQBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7F1729154B3C001995BF /* AQBaseNavigationController.swift */; };
+		C6AC7F1A29154B3C001995BF /* AQBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7F1829154B3C001995BF /* AQBaseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F3AFA9958A2731C1A5F5D96 /* Pods-CitrusGrandisMultiplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitrusGrandisMultiplication.release.xcconfig"; path = "Target Support Files/Pods-CitrusGrandisMultiplication/Pods-CitrusGrandisMultiplication.release.xcconfig"; sourceTree = "<group>"; };
+		C6AC7EC729154078001995BF /* CitrusGrandisMultiplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitrusGrandisMultiplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6AC7ECA29154078001995BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6AC7ECE29154078001995BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6AC7ED129154078001995BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6AC7ED329154079001995BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6AC7ED629154079001995BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6AC7ED829154079001995BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6AC7EDE29154187001995BF /* Macro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
+		C6AC7EE2291542D2001995BF /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		C6AC7EE4291542D2001995BF /* MBHUD_Success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Success@2x.png"; sourceTree = "<group>"; };
+		C6AC7EE5291542D2001995BF /* MBHUD_Info@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Info@3x.png"; sourceTree = "<group>"; };
+		C6AC7EE6291542D2001995BF /* MBHUD_Info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Info@2x.png"; sourceTree = "<group>"; };
+		C6AC7EE7291542D2001995BF /* MBHUD_Success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Success@3x.png"; sourceTree = "<group>"; };
+		C6AC7EE8291542D2001995BF /* MBHUD_Error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Error@2x.png"; sourceTree = "<group>"; };
+		C6AC7EE9291542D2001995BF /* MBHUD_Warn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Warn@3x.png"; sourceTree = "<group>"; };
+		C6AC7EEA291542D2001995BF /* MBHUD_Warn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Warn@2x.png"; sourceTree = "<group>"; };
+		C6AC7EEB291542D2001995BF /* MBHUD_Error@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Error@3x.png"; sourceTree = "<group>"; };
+		C6AC7EEC291542D2001995BF /* MBProgressHUD+XM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XM.m"; sourceTree = "<group>"; };
+		C6AC7EED291542D2001995BF /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		C6AC7EEE291542D2001995BF /* MBProgressHUD+XM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XM.h"; sourceTree = "<group>"; };
+		C6AC7EFF2915432F001995BF /* AQTabItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQTabItemView.swift; sourceTree = "<group>"; };
+		C6AC7F002915432F001995BF /* AQTabItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQTabItemModel.swift; sourceTree = "<group>"; };
+		C6AC7F012915432F001995BF /* AQTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQTabbar.swift; sourceTree = "<group>"; };
+		C6AC7F022915432F001995BF /* AQTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQTabbarViewController.swift; sourceTree = "<group>"; };
+		C6AC7F0A291543E7001995BF /* CitrusGrandisMultiplication-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CitrusGrandisMultiplication-Bridging-Header.h"; sourceTree = "<group>"; };
+		C6AC7F0E29154514001995BF /* TabViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController1.swift; sourceTree = "<group>"; };
+		C6AC7F102915451B001995BF /* TabViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController2.swift; sourceTree = "<group>"; };
+		C6AC7F1229154521001995BF /* TabViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController3.swift; sourceTree = "<group>"; };
+		C6AC7F1729154B3C001995BF /* AQBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQBaseNavigationController.swift; sourceTree = "<group>"; };
+		C6AC7F1829154B3C001995BF /* AQBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQBaseViewController.swift; sourceTree = "<group>"; };
+		C7FE154F53EFA9EC3359CF5E /* libPods-CitrusGrandisMultiplication.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CitrusGrandisMultiplication.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE9C5FDFAAFE479E784E129 /* Pods-CitrusGrandisMultiplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitrusGrandisMultiplication.debug.xcconfig"; path = "Target Support Files/Pods-CitrusGrandisMultiplication/Pods-CitrusGrandisMultiplication.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6AC7EC429154078001995BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA411A9B163670059390D1C1 /* libPods-CitrusGrandisMultiplication.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BDD265F4074BEB69900D692 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBE9C5FDFAAFE479E784E129 /* Pods-CitrusGrandisMultiplication.debug.xcconfig */,
+				2F3AFA9958A2731C1A5F5D96 /* Pods-CitrusGrandisMultiplication.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		92AC47A0F724C80263F758E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7FE154F53EFA9EC3359CF5E /* libPods-CitrusGrandisMultiplication.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6AC7EBE29154078001995BF = {
+			isa = PBXGroup;
+			children = (
+				C6AC7EC929154078001995BF /* CitrusGrandisMultiplication */,
+				C6AC7EC829154078001995BF /* Products */,
+				5BDD265F4074BEB69900D692 /* Pods */,
+				92AC47A0F724C80263F758E9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6AC7EC829154078001995BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC7EC729154078001995BF /* CitrusGrandisMultiplication.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6AC7EC929154078001995BF /* CitrusGrandisMultiplication */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC7ECA29154078001995BF /* AppDelegate.swift */,
+				C6AC7ECE29154078001995BF /* ViewController.swift */,
+				C6AC7EDE29154187001995BF /* Macro.swift */,
+				C6AC7F0A291543E7001995BF /* CitrusGrandisMultiplication-Bridging-Header.h */,
+				C6AC7F152915458B001995BF /* Resource */,
+				C6AC7EFC29154327001995BF /* Module */,
+				C6AC7EE0291542C1001995BF /* Library */,
+				C6AC7ED029154078001995BF /* Main.storyboard */,
+				C6AC7ED529154079001995BF /* LaunchScreen.storyboard */,
+				C6AC7ED829154079001995BF /* Info.plist */,
+			);
+			path = CitrusGrandisMultiplication;
+			sourceTree = "<group>";
+		};
+		C6AC7EE0291542C1001995BF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC7EE1291542D2001995BF /* MBProgressHUD */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		C6AC7EE1291542D2001995BF /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC7EE3291542D2001995BF /* HUDResource */,
+				C6AC7EED291542D2001995BF /* MBProgressHUD.h */,
+				C6AC7EE2291542D2001995BF /* MBProgressHUD.m */,
+				C6AC7EEE291542D2001995BF /* MBProgressHUD+XM.h */,
+				C6AC7EEC291542D2001995BF /* MBProgressHUD+XM.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		C6AC7EE3291542D2001995BF /* HUDResource */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC7EE8291542D2001995BF /* MBHUD_Error@2x.png */,
+				C6AC7EEB291542D2001995BF /* MBHUD_Error@3x.png */,
+				C6AC7EE6291542D2001995BF /* MBHUD_Info@2x.png */,
+				C6AC7EE5291542D2001995BF /* MBHUD_Info@3x.png */,
+				C6AC7EE4291542D2001995BF /* MBHUD_Success@2x.png */,
+				C6AC7EE7291542D2001995BF /* MBHUD_Success@3x.png */,
+				C6AC7EEA291542D2001995BF /* MBHUD_Warn@2x.png */,
+				C6AC7EE9291542D2001995BF /* MBHUD_Warn@3x.png */,
+			);
+			path = HUDResource;
+			sourceTree = "<group>";
+		};
+		C6AC7EFC29154327001995BF /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC7F1629154B3C001995BF /* BaseModule */,
+				C6AC7EFD2915432F001995BF /* TabModule */,
+				C6AC7F0B291544E8001995BF /* TabVC1 */,
+				C6AC7F0C291544F6001995BF /* TabVC2 */,
+				C6AC7F0D291544FF001995BF /* TabVC3 */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		C6AC7EFD2915432F001995BF /* TabModule */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC7EFE2915432F001995BF /* TabBar */,
+				C6AC7F022915432F001995BF /* AQTabbarViewController.swift */,
+			);
+			path = TabModule;
+			sourceTree = "<group>";
+		};
+		C6AC7EFE2915432F001995BF /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC7EFF2915432F001995BF /* AQTabItemView.swift */,
+				C6AC7F002915432F001995BF /* AQTabItemModel.swift */,
+				C6AC7F012915432F001995BF /* AQTabbar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C6AC7F0B291544E8001995BF /* TabVC1 */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC7F0E29154514001995BF /* TabViewController1.swift */,
+			);
+			path = TabVC1;
+			sourceTree = "<group>";
+		};
+		C6AC7F0C291544F6001995BF /* TabVC2 */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC7F102915451B001995BF /* TabViewController2.swift */,
+			);
+			path = TabVC2;
+			sourceTree = "<group>";
+		};
+		C6AC7F0D291544FF001995BF /* TabVC3 */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC7F1229154521001995BF /* TabViewController3.swift */,
+			);
+			path = TabVC3;
+			sourceTree = "<group>";
+		};
+		C6AC7F152915458B001995BF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC7ED329154079001995BF /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C6AC7F1629154B3C001995BF /* BaseModule */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC7F1729154B3C001995BF /* AQBaseNavigationController.swift */,
+				C6AC7F1829154B3C001995BF /* AQBaseViewController.swift */,
+			);
+			path = BaseModule;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6AC7EC629154078001995BF /* CitrusGrandisMultiplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6AC7EDB29154079001995BF /* Build configuration list for PBXNativeTarget "CitrusGrandisMultiplication" */;
+			buildPhases = (
+				F830B0ACA4CB188EAF887587 /* [CP] Check Pods Manifest.lock */,
+				C6AC7EC329154078001995BF /* Sources */,
+				C6AC7EC429154078001995BF /* Frameworks */,
+				C6AC7EC529154078001995BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CitrusGrandisMultiplication;
+			productName = CitrusGrandisMultiplication;
+			productReference = C6AC7EC729154078001995BF /* CitrusGrandisMultiplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6AC7EBF29154078001995BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					C6AC7EC629154078001995BF = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = C6AC7EC229154078001995BF /* Build configuration list for PBXProject "CitrusGrandisMultiplication" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6AC7EBE29154078001995BF;
+			productRefGroup = C6AC7EC829154078001995BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6AC7EC629154078001995BF /* CitrusGrandisMultiplication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6AC7EC529154078001995BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6AC7EF5291542D2001995BF /* MBHUD_Warn@3x.png in Resources */,
+				C6AC7EF4291542D2001995BF /* MBHUD_Error@2x.png in Resources */,
+				C6AC7EF3291542D2001995BF /* MBHUD_Success@3x.png in Resources */,
+				C6AC7ED729154079001995BF /* LaunchScreen.storyboard in Resources */,
+				C6AC7EF7291542D2001995BF /* MBHUD_Error@3x.png in Resources */,
+				C6AC7EF2291542D2001995BF /* MBHUD_Info@2x.png in Resources */,
+				C6AC7EF0291542D2001995BF /* MBHUD_Success@2x.png in Resources */,
+				C6AC7ED429154079001995BF /* Assets.xcassets in Resources */,
+				C6AC7EF6291542D2001995BF /* MBHUD_Warn@2x.png in Resources */,
+				C6AC7EF1291542D2001995BF /* MBHUD_Info@3x.png in Resources */,
+				C6AC7ED229154078001995BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F830B0ACA4CB188EAF887587 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CitrusGrandisMultiplication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6AC7EC329154078001995BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6AC7F062915432F001995BF /* AQTabbarViewController.swift in Sources */,
+				C6AC7F112915451B001995BF /* TabViewController2.swift in Sources */,
+				C6AC7ECF29154078001995BF /* ViewController.swift in Sources */,
+				C6AC7EF8291542D2001995BF /* MBProgressHUD+XM.m in Sources */,
+				C6AC7EDF29154187001995BF /* Macro.swift in Sources */,
+				C6AC7F1A29154B3C001995BF /* AQBaseViewController.swift in Sources */,
+				C6AC7F1929154B3C001995BF /* AQBaseNavigationController.swift in Sources */,
+				C6AC7ECB29154078001995BF /* AppDelegate.swift in Sources */,
+				C6AC7EEF291542D2001995BF /* MBProgressHUD.m in Sources */,
+				C6AC7F0F29154514001995BF /* TabViewController1.swift in Sources */,
+				C6AC7F1329154521001995BF /* TabViewController3.swift in Sources */,
+				C6AC7F032915432F001995BF /* AQTabItemView.swift in Sources */,
+				C6AC7F042915432F001995BF /* AQTabItemModel.swift in Sources */,
+				C6AC7F052915432F001995BF /* AQTabbar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6AC7ED029154078001995BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6AC7ED129154078001995BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6AC7ED529154079001995BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6AC7ED629154079001995BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6AC7ED929154079001995BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6AC7EDA29154079001995BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6AC7EDC29154079001995BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBE9C5FDFAAFE479E784E129 /* Pods-CitrusGrandisMultiplication.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D83JHSRAX2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CitrusGrandisMultiplication/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.CGM.CitrusGrandisMultiplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CitrusGrandisMultiplication/CitrusGrandisMultiplication-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6AC7EDD29154079001995BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F3AFA9958A2731C1A5F5D96 /* Pods-CitrusGrandisMultiplication.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D83JHSRAX2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CitrusGrandisMultiplication/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.CGM.CitrusGrandisMultiplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CitrusGrandisMultiplication/CitrusGrandisMultiplication-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6AC7EC229154078001995BF /* Build configuration list for PBXProject "CitrusGrandisMultiplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6AC7ED929154079001995BF /* Debug */,
+				C6AC7EDA29154079001995BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6AC7EDB29154079001995BF /* Build configuration list for PBXNativeTarget "CitrusGrandisMultiplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6AC7EDC29154079001995BF /* Debug */,
+				C6AC7EDD29154079001995BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6AC7EBF29154078001995BF /* Project object */;
+}

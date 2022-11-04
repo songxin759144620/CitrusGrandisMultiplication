@@ -1,0 +1,6 @@
+module XYZKit_master {
+  umbrella header "XYZKit_master-umbrella.h"
+
+  export *
+  module * { export * }
+}
