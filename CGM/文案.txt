@@ -1,0 +1,82 @@
+苍橘繁
+Citrus Grandis Multiplication
+夏日昏沉刻忽闻蜜瓜香
+In summer I suddenly smell the sweet smell of honeydew melon
+主色#acbc56
+
+
+Tab1-模块----------------------
+1无限畅饮Unlimited Drinking
+草莓汁Strawberry juice
+配料：草莓，水，糖，椰果甜色素
+Ingredients: strawberry, water, sugar, coconut Sweet, pigment
+草莓汁是夏天的标配，很受年轻人的喜爱。
+Strawberry juice is standard in summer, which is very popularLove of light people.
+详情Details
+15¥/杯
+15 $/cup
+青柠水Lime water
+配料：柠檬，水，糖，香菜奶油
+Ingredients: lemon, water, sugar, coriander, cream
+青柠水是有点奇特的饮料，一般人不敢轻易尝试。
+Lime juice is a kind of strange drink People dare not try easily.
+详情Details
+22¥/杯
+22 $/cup
+饮品详情Drink Details
+
+
+
+Tab2-模块----------------------
+2自己动手Do Yourself
+制作精美饮品
+Making exquisite drinks
+仙草牛奶饮
+Xiancao milk drink
+步骤：先用少量的清水把龟苓膏粉调成糊状剩下的水放入锅中把水烧开。液体凝固后龟苓膏就成型了倒入冷藏后的纯牛奶。
+Step: Use a small amount of water to mix the Guiling paste powder into a paste and put the remaining water into the potBring the water to a boil. After the liquid solidifies, the Guiling paste forms the pure milk poured into the cold storage.
+小贴士：偏寒凉胃寒和脾胃虚弱的人不宜多吃。
+Tips: People with cold stomach and weak spleen and stomach should not eat more.
+评价：Evaluation:
+
+
+
+Tab3-模块----------------------
+3品饮吧Drink Bar
+橙子往事The past of orange
+这件事情是我最不喜欢回忆的故事，他很令我难过，我最喜欢喝的橙子果汁制作者去世了，以后都喝不到了。
+This is the story I don't like to recall. It makes me sad. My favorite orange
+The juice maker died, and I can't drink any more.
+2022-10-30
+
+
+      
+Tab1添加-模块----------------------
+添加饮品Add Drinks
+饮品名称：Drink name:
+配料：Ingredients:
+文案：Copy:
+价格：Price:
+
+
+
+Tab2添加-模块----------------------
+制作Make
+评价：Evaluation:
+输入标题Enter title
+输入步骤Enter step
+输入小贴士Enter tips
+
+
+
+Tab3添加-模块----------------------
+其他故事Other Stories
+输入标题Enter title
+输入内容Enter content
+输入日期Enter date
+添加图片Add picture
+
+
+
+
+
