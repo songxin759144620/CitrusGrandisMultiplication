@@ -6,4 +6,5 @@ platform :ios, '11.0'
 target 'CitrusGrandisMultiplication' do
   pod 'SnapKit'
   pod 'XYZKit_master'
+  pod 'HandyJSON'
 end
