@@ -48,7 +48,7 @@ class AQTabbarViewController: UITabBarController {
         var items: [AQTabItemModel] = []
         
         let recordModel = AQTabItemModel(type: .record, normalImg: UIImage(named: "2无限畅饮")!, selectedImg: UIImage(named: "1无限畅饮")!,title: "Unlimited Drinking")
-        vcs.append(AQBaseNavigationController(rootViewController: vc1))
+        vcs.append(vc1)
         items.append(recordModel)
         types.append(.record)
         

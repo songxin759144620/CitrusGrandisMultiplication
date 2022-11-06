@@ -14,7 +14,7 @@ let APAppdelegate = UIApplication.shared.delegate as? AppDelegate
 //页面布局相关的
 //通过安全距离判断是否是齐刘海
 var isIphoneX : Bool {
-    let bottom = UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0
+    let bottom = UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 0
     if bottom > 0 {
         return true
     } else {
@@ -24,7 +24,7 @@ var isIphoneX : Bool {
 
 
 let StatusBarHeigt = isIphoneX ? 44.0 : 20.0         //状态栏高度
-let NavBarHeight = StatusBarHeigt + 44.0          //导航栏高度
+let NavBarHeight = StatusBarHeigt + 44.0       //导航栏高度
 let TabbarHeight = isIphoneX ? 34 + 49 : 49      //Tabbar的高度
 
 let BottomSafeMargin = isIphoneX ? 34.0 : 0       //底部的安全距离

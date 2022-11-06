@@ -7,9 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500A0E9A291636000053A39B /* DrinkProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A0E99291636000053A39B /* DrinkProductCell.swift */; };
+		500A0E9D29163CD50053A39B /* DriknModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A0E9C29163CD50053A39B /* DriknModel.swift */; };
+		500A0E9F291645210053A39B /* DrinkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A0E9E291645210053A39B /* DrinkDetailViewController.swift */; };
+		500A0EA1291694510053A39B /* AddDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A0EA0291694510053A39B /* AddDrinkViewController.swift */; };
+		500A0EA42916A82C0053A39B /* MakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A0EA32916A82C0053A39B /* MakeModel.swift */; };
+		500A0EA62916A9CF0053A39B /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A0EA52916A9CF0053A39B /* StarView.swift */; };
+		500A0EAB2916B7600053A39B /* MakeDrinkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A0EA92916B7600053A39B /* MakeDrinkVC.swift */; };
+		500A0EAC2916B7600053A39B /* MakeDrinkVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 500A0EAA2916B7600053A39B /* MakeDrinkVC.xib */; };
+		500A0EB12916C0FD0053A39B /* CALayer+BorderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 500A0EB02916C0FD0053A39B /* CALayer+BorderColor.m */; };
+		500A0EB5291779650053A39B /* TabViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A0EB3291779650053A39B /* TabViewController3.swift */; };
+		500A0EB6291779650053A39B /* TabViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 500A0EB4291779650053A39B /* TabViewController3.xib */; };
+		500A0EB929177D810053A39B /* DrinkBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A0EB829177D810053A39B /* DrinkBarModel.swift */; };
+		500A0EBC291780A50053A39B /* OtherStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A0EBA291780A50053A39B /* OtherStoryViewController.swift */; };
+		500A0EBD291780A50053A39B /* OtherStoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 500A0EBB291780A50053A39B /* OtherStoryViewController.xib */; };
 		BA411A9B163670059390D1C1 /* libPods-CitrusGrandisMultiplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FE154F53EFA9EC3359CF5E /* libPods-CitrusGrandisMultiplication.a */; };
 		C6AC7ECB29154078001995BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7ECA29154078001995BF /* AppDelegate.swift */; };
-		C6AC7ECF29154078001995BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7ECE29154078001995BF /* ViewController.swift */; };
 		C6AC7ED229154078001995BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7ED029154078001995BF /* Main.storyboard */; };
 		C6AC7ED429154079001995BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7ED329154079001995BF /* Assets.xcassets */; };
 		C6AC7ED729154079001995BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7ED529154079001995BF /* LaunchScreen.storyboard */; };
@@ -30,16 +43,29 @@
 		C6AC7F062915432F001995BF /* AQTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7F022915432F001995BF /* AQTabbarViewController.swift */; };
 		C6AC7F0F29154514001995BF /* TabViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7F0E29154514001995BF /* TabViewController1.swift */; };
 		C6AC7F112915451B001995BF /* TabViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7F102915451B001995BF /* TabViewController2.swift */; };
-		C6AC7F1329154521001995BF /* TabViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7F1229154521001995BF /* TabViewController3.swift */; };
 		C6AC7F1929154B3C001995BF /* AQBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7F1729154B3C001995BF /* AQBaseNavigationController.swift */; };
 		C6AC7F1A29154B3C001995BF /* AQBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7F1829154B3C001995BF /* AQBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F3AFA9958A2731C1A5F5D96 /* Pods-CitrusGrandisMultiplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitrusGrandisMultiplication.release.xcconfig"; path = "Target Support Files/Pods-CitrusGrandisMultiplication/Pods-CitrusGrandisMultiplication.release.xcconfig"; sourceTree = "<group>"; };
+		500A0E99291636000053A39B /* DrinkProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkProductCell.swift; sourceTree = "<group>"; };
+		500A0E9C29163CD50053A39B /* DriknModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriknModel.swift; sourceTree = "<group>"; };
+		500A0E9E291645210053A39B /* DrinkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailViewController.swift; sourceTree = "<group>"; };
+		500A0EA0291694510053A39B /* AddDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinkViewController.swift; sourceTree = "<group>"; };
+		500A0EA32916A82C0053A39B /* MakeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeModel.swift; sourceTree = "<group>"; };
+		500A0EA52916A9CF0053A39B /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		500A0EA92916B7600053A39B /* MakeDrinkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeDrinkVC.swift; sourceTree = "<group>"; };
+		500A0EAA2916B7600053A39B /* MakeDrinkVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakeDrinkVC.xib; sourceTree = "<group>"; };
+		500A0EAF2916C0FD0053A39B /* CALayer+BorderColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+BorderColor.h"; sourceTree = "<group>"; };
+		500A0EB02916C0FD0053A39B /* CALayer+BorderColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+BorderColor.m"; sourceTree = "<group>"; };
+		500A0EB3291779650053A39B /* TabViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController3.swift; sourceTree = "<group>"; };
+		500A0EB4291779650053A39B /* TabViewController3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabViewController3.xib; sourceTree = "<group>"; };
+		500A0EB829177D810053A39B /* DrinkBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkBarModel.swift; sourceTree = "<group>"; };
+		500A0EBA291780A50053A39B /* OtherStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherStoryViewController.swift; sourceTree = "<group>"; };
+		500A0EBB291780A50053A39B /* OtherStoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherStoryViewController.xib; sourceTree = "<group>"; };
 		C6AC7EC729154078001995BF /* CitrusGrandisMultiplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitrusGrandisMultiplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AC7ECA29154078001995BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6AC7ECE29154078001995BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C6AC7ED129154078001995BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6AC7ED329154079001995BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6AC7ED629154079001995BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +90,6 @@
 		C6AC7F0A291543E7001995BF /* CitrusGrandisMultiplication-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CitrusGrandisMultiplication-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6AC7F0E29154514001995BF /* TabViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController1.swift; sourceTree = "<group>"; };
 		C6AC7F102915451B001995BF /* TabViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController2.swift; sourceTree = "<group>"; };
-		C6AC7F1229154521001995BF /* TabViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController3.swift; sourceTree = "<group>"; };
 		C6AC7F1729154B3C001995BF /* AQBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQBaseNavigationController.swift; sourceTree = "<group>"; };
 		C6AC7F1829154B3C001995BF /* AQBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQBaseViewController.swift; sourceTree = "<group>"; };
 		C7FE154F53EFA9EC3359CF5E /* libPods-CitrusGrandisMultiplication.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CitrusGrandisMultiplication.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +108,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		500A0E98291635EC0053A39B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				500A0E99291636000053A39B /* DrinkProductCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		500A0E9B29163CB80053A39B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				500A0E9C29163CD50053A39B /* DriknModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		500A0EA22916A8190053A39B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				500A0EA32916A82C0053A39B /* MakeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		500A0EB2291773D40053A39B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				500A0EAF2916C0FD0053A39B /* CALayer+BorderColor.h */,
+				500A0EB02916C0FD0053A39B /* CALayer+BorderColor.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		500A0EB729177D6A0053A39B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				500A0EB829177D810053A39B /* DrinkBarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5BDD265F4074BEB69900D692 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,8 +187,8 @@
 		C6AC7EC929154078001995BF /* CitrusGrandisMultiplication */ = {
 			isa = PBXGroup;
 			children = (
+				500A0EB2291773D40053A39B /* Category */,
 				C6AC7ECA29154078001995BF /* AppDelegate.swift */,
-				C6AC7ECE29154078001995BF /* ViewController.swift */,
 				C6AC7EDE29154187001995BF /* Macro.swift */,
 				C6AC7F0A291543E7001995BF /* CitrusGrandisMultiplication-Bridging-Header.h */,
 				C6AC7F152915458B001995BF /* Resource */,
@@ -204,7 +270,11 @@
 		C6AC7F0B291544E8001995BF /* TabVC1 */ = {
 			isa = PBXGroup;
 			children = (
+				500A0E9B29163CB80053A39B /* Model */,
+				500A0E98291635EC0053A39B /* Cell */,
 				C6AC7F0E29154514001995BF /* TabViewController1.swift */,
+				500A0E9E291645210053A39B /* DrinkDetailViewController.swift */,
+				500A0EA0291694510053A39B /* AddDrinkViewController.swift */,
 			);
 			path = TabVC1;
 			sourceTree = "<group>";
@@ -212,7 +282,11 @@
 		C6AC7F0C291544F6001995BF /* TabVC2 */ = {
 			isa = PBXGroup;
 			children = (
+				500A0EA22916A8190053A39B /* Model */,
 				C6AC7F102915451B001995BF /* TabViewController2.swift */,
+				500A0EA92916B7600053A39B /* MakeDrinkVC.swift */,
+				500A0EAA2916B7600053A39B /* MakeDrinkVC.xib */,
+				500A0EA52916A9CF0053A39B /* StarView.swift */,
 			);
 			path = TabVC2;
 			sourceTree = "<group>";
@@ -220,7 +294,11 @@
 		C6AC7F0D291544FF001995BF /* TabVC3 */ = {
 			isa = PBXGroup;
 			children = (
-				C6AC7F1229154521001995BF /* TabViewController3.swift */,
+				500A0EB729177D6A0053A39B /* Model */,
+				500A0EB3291779650053A39B /* TabViewController3.swift */,
+				500A0EB4291779650053A39B /* TabViewController3.xib */,
+				500A0EBA291780A50053A39B /* OtherStoryViewController.swift */,
+				500A0EBB291780A50053A39B /* OtherStoryViewController.xib */,
 			);
 			path = TabVC3;
 			sourceTree = "<group>";
@@ -303,6 +381,7 @@
 			files = (
 				C6AC7EF5291542D2001995BF /* MBHUD_Warn@3x.png in Resources */,
 				C6AC7EF4291542D2001995BF /* MBHUD_Error@2x.png in Resources */,
+				500A0EB6291779650053A39B /* TabViewController3.xib in Resources */,
 				C6AC7EF3291542D2001995BF /* MBHUD_Success@3x.png in Resources */,
 				C6AC7ED729154079001995BF /* LaunchScreen.storyboard in Resources */,
 				C6AC7EF7291542D2001995BF /* MBHUD_Error@3x.png in Resources */,
@@ -312,6 +391,8 @@
 				C6AC7EF6291542D2001995BF /* MBHUD_Warn@2x.png in Resources */,
 				C6AC7EF1291542D2001995BF /* MBHUD_Info@3x.png in Resources */,
 				C6AC7ED229154078001995BF /* Main.storyboard in Resources */,
+				500A0EAC2916B7600053A39B /* MakeDrinkVC.xib in Resources */,
+				500A0EBD291780A50053A39B /* OtherStoryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,19 +429,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6AC7F062915432F001995BF /* AQTabbarViewController.swift in Sources */,
+				500A0EA1291694510053A39B /* AddDrinkViewController.swift in Sources */,
 				C6AC7F112915451B001995BF /* TabViewController2.swift in Sources */,
-				C6AC7ECF29154078001995BF /* ViewController.swift in Sources */,
+				500A0EBC291780A50053A39B /* OtherStoryViewController.swift in Sources */,
 				C6AC7EF8291542D2001995BF /* MBProgressHUD+XM.m in Sources */,
 				C6AC7EDF29154187001995BF /* Macro.swift in Sources */,
+				500A0E9F291645210053A39B /* DrinkDetailViewController.swift in Sources */,
 				C6AC7F1A29154B3C001995BF /* AQBaseViewController.swift in Sources */,
+				500A0EAB2916B7600053A39B /* MakeDrinkVC.swift in Sources */,
 				C6AC7F1929154B3C001995BF /* AQBaseNavigationController.swift in Sources */,
 				C6AC7ECB29154078001995BF /* AppDelegate.swift in Sources */,
+				500A0EA62916A9CF0053A39B /* StarView.swift in Sources */,
+				500A0EB5291779650053A39B /* TabViewController3.swift in Sources */,
 				C6AC7EEF291542D2001995BF /* MBProgressHUD.m in Sources */,
 				C6AC7F0F29154514001995BF /* TabViewController1.swift in Sources */,
-				C6AC7F1329154521001995BF /* TabViewController3.swift in Sources */,
+				500A0EB929177D810053A39B /* DrinkBarModel.swift in Sources */,
+				500A0E9A291636000053A39B /* DrinkProductCell.swift in Sources */,
 				C6AC7F032915432F001995BF /* AQTabItemView.swift in Sources */,
 				C6AC7F042915432F001995BF /* AQTabItemModel.swift in Sources */,
+				500A0E9D29163CD50053A39B /* DriknModel.swift in Sources */,
 				C6AC7F052915432F001995BF /* AQTabbar.swift in Sources */,
+				500A0EA42916A82C0053A39B /* MakeModel.swift in Sources */,
+				500A0EB12916C0FD0053A39B /* CALayer+BorderColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,8 +604,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,8 +633,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

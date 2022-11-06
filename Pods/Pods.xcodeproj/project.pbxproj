@@ -206,7 +206,7 @@
 		95722325DB5E6263C28BA19CF70C46ED /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Source/EnumTransform.swift; sourceTree = "<group>"; };
 		9762B4470FC35592DC29ADA0B7167763 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Sources/Debugging.swift; sourceTree = "<group>"; };
 		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = SnapKit; path = libSnapKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E4BFC424F5C692AA47535BF013B74EA /* XYZKit_master-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XYZKit_master-dummy.m"; sourceTree = "<group>"; };
 		9E829644D56D71DCC2E590940A1381F4 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Sources/ConstraintDSL.swift; sourceTree = "<group>"; };
 		9F9148316294098E17A94CA601353F99 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Sources/ConstraintAttributes.swift; sourceTree = "<group>"; };
@@ -216,7 +216,7 @@
 		A86AF2BF1DAB1CB8E4B9372DCEBA2430 /* Array+XYZ.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+XYZ.swift"; path = "XYZKit/Classes/Core/XYZFoundation/Array+XYZ.swift"; sourceTree = "<group>"; };
 		A9E41E58803E84040DEFCF2E9E2EFCCF /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Sources/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
 		AA763233F2953B479BE229DBBC018F40 /* ReflectionHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReflectionHelper.swift; path = Source/ReflectionHelper.swift; sourceTree = "<group>"; };
-		ADD2330991AABCB2C19D3D42DDC10B3E /* XYZKit_master */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = XYZKit_master; path = libXYZKit_master.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD2330991AABCB2C19D3D42DDC10B3E /* libXYZKit_master.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXYZKit_master.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B172D82577023336E48634F41AA574E4 /* ContextDescriptorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextDescriptorType.swift; path = Source/ContextDescriptorType.swift; sourceTree = "<group>"; };
 		B41A92DA7E304EE54AD8815278057E73 /* HandyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HandyJSON.modulemap; sourceTree = "<group>"; };
 		B45BBC58ED58E3030C6223D108963511 /* Pods-CitrusGrandisMultiplication-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CitrusGrandisMultiplication-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -331,7 +331,6 @@
 				A071AC7247E1B5BD1013F5DDC1DDBA7A /* URLTransform.swift */,
 				4F41320195E1B304BCF3E8A2D888FC17 /* Support Files */,
 			);
-			name = HandyJSON;
 			path = HandyJSON;
 			sourceTree = "<group>";
 		};
@@ -442,7 +441,7 @@
 				CD54121DDA84872534168702B5F92950 /* HandyJSON */,
 				64FBD32AA8B65E18260C0FA31CA22220 /* Pods-CitrusGrandisMultiplication */,
 				979486118B3E90C08386079D57962701 /* SnapKit */,
-				ADD2330991AABCB2C19D3D42DDC10B3E /* XYZKit_master */,
+				ADD2330991AABCB2C19D3D42DDC10B3E /* libXYZKit_master.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -464,7 +463,6 @@
 				564900C1A7DE13258D0390B3EB85074B /* Core */,
 				72F6477BB1D394FDFB4B802789507520 /* Support Files */,
 			);
-			name = XYZKit_master;
 			path = XYZKit_master;
 			sourceTree = "<group>";
 		};
@@ -517,7 +515,6 @@
 				C493B54FD7824F951091CBB2E1E8DCB0 /* UILayoutSupport+Extensions.swift */,
 				C60BB32405649ED8DFC39F934831E388 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -611,7 +608,7 @@
 			);
 			name = XYZKit_master;
 			productName = XYZKit_master;
-			productReference = ADD2330991AABCB2C19D3D42DDC10B3E /* XYZKit_master */;
+			productReference = ADD2330991AABCB2C19D3D42DDC10B3E /* libXYZKit_master.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		709DCD7C99D00F53D3245BED61FA3A32 /* Pods-CitrusGrandisMultiplication */ = {
@@ -990,7 +987,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/XYZKit_master/XYZKit_master-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULEMAP_FILE = Headers/Public/XYZKit_master/XYZKit_master.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1125,7 +1122,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/XYZKit_master/XYZKit_master-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULEMAP_FILE = Headers/Public/XYZKit_master/XYZKit_master.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";

@@ -51,6 +51,7 @@ enum NavBarType {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
         leftBtn.isHidden = true
+        view.clipsToBounds = true
     }
     
     private func configNavBar(type: NavBarType) {
