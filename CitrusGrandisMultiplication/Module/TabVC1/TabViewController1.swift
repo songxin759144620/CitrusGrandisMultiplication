@@ -15,19 +15,24 @@ class TabViewController1: AQBaseViewController {
         dataSource.append(DrinkModel(title: "Strawberry juice", subTitle: "Ingredients: strawberry, water,sugar, coconut Sweet, pigment", content: "Strawberry juice is standard in summer, which is very popular Love of light people.", image: "tab1-2", price: "15"))
         dataSource.append(DrinkModel(title: "Lime water", subTitle: "Ingredients: lemon, water, sugar, coriander, cream", content: "Lime juice is a kind of strange drink People dare not try easily.", image: "tab1-3", price: "22"))
         
+        if CacheUtil.share.drinkList() == nil {
+            CacheUtil.share.writeDrinkList(dataSource)
+        }else{
+            dataSource = CacheUtil.share.drinkList()!
+        }
+        
         _ = [bgImg, tableView]
         
         navBarType = .light
         rightBtnImage = "tab1添加背景白色添加"
         titleStr = "Unlimited Drinking"
-        
-        
     }
     override func rightBtnAction() {
         let vc = AddDrinkViewController()
         vc.addDrinkBlock = { [weak self] drinkModel in
             if drinkModel != nil {
                 self?.dataSource.append(drinkModel!)
+                CacheUtil.share.writeDrinkList(self?.dataSource ?? [DrinkModel]())
                 self?.tableView.reloadData()
             }
         }
@@ -72,6 +77,13 @@ extension TabViewController1: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DrinkProductCell", for: indexPath) as? DrinkProductCell
         cell?.drinkModel = dataSource[indexPath.row]
+        cell?.deleteBlock = { [weak self] in
+            self?.dataSource.remove(at: indexPath.row)
+            self?.tableView.beginUpdates()
+            self?.tableView.deleteRows(at: [indexPath], with: .fade)
+            self?.tableView.endUpdates()
+            CacheUtil.share.writeDrinkList(self?.dataSource ?? [DrinkModel]())
+        }
         return cell ?? UITableViewCell()
     }
     

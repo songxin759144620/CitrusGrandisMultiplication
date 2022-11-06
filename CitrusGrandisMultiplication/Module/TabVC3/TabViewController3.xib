@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabViewController3" customModule="CitrusGrandisMultiplication" customModuleProvider="target">
             <connections>
+                <outlet property="arr" destination="tee-Ne-aNm" id="R9y-ha-OhG"/>
+                <outlet property="arrbg" destination="Gft-H0-Km3" id="XPa-od-jit"/>
                 <outlet property="contentImg" destination="Pup-D2-JFK" id="Gzx-K4-eIy"/>
                 <outlet property="dateBtn" destination="Rsc-i6-2ze" id="GU1-Oi-quc"/>
                 <outlet property="des" destination="ndc-BV-knD" id="4hs-Sw-jiK"/>

@@ -29,6 +29,12 @@ class TabViewController2: AQBaseViewController {
         _ = [topImg, makeBtn, contentView, title1, subTitle, content, startView]
         
         makeModel = MakeModel(title: "Xiancao milk drink", step: "Use a small amount of water to mix the Guiling paste powder into a paste and put the remaining water into the pot Bring the water to a boil. After the liquid solidifies, the Guiling paste forms the pure milk poured into the cold storage.", tips: "People with cold stomach and weak spleen and stomach should not eat more.", stars: 4)
+        
+        if CacheUtil.share.markDrinkModel() == nil {
+            CacheUtil.share.setMarkDrinkModel(makeModel!)
+        }else{
+            makeModel = CacheUtil.share.markDrinkModel()
+        }
     }
     
     private lazy var bgImg: UIImageView = {
@@ -69,6 +75,7 @@ class TabViewController2: AQBaseViewController {
             vc.saveBlock = {[weak self] model in
                 guard let self = self else { return }
                 self.makeModel = model
+                CacheUtil.share.setMarkDrinkModel(model)
             }
             self?.navigationController?.pushViewController(vc, animated: true)
         }

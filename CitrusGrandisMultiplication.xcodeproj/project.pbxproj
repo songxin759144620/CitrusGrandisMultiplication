@@ -21,6 +21,8 @@
 		500A0EB929177D810053A39B /* DrinkBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A0EB829177D810053A39B /* DrinkBarModel.swift */; };
 		500A0EBC291780A50053A39B /* OtherStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500A0EBA291780A50053A39B /* OtherStoryViewController.swift */; };
 		500A0EBD291780A50053A39B /* OtherStoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 500A0EBB291780A50053A39B /* OtherStoryViewController.xib */; };
+		50F2890929178FCC0019C290 /* CacheUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F2890829178FCC0019C290 /* CacheUtil.swift */; };
+		50F2890C2917C58D0019C290 /* AQFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F2890B2917C58D0019C290 /* AQFileManager.m */; };
 		BA411A9B163670059390D1C1 /* libPods-CitrusGrandisMultiplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FE154F53EFA9EC3359CF5E /* libPods-CitrusGrandisMultiplication.a */; };
 		C6AC7ECB29154078001995BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7ECA29154078001995BF /* AppDelegate.swift */; };
 		C6AC7ED229154078001995BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7ED029154078001995BF /* Main.storyboard */; };
@@ -64,6 +66,9 @@
 		500A0EB829177D810053A39B /* DrinkBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkBarModel.swift; sourceTree = "<group>"; };
 		500A0EBA291780A50053A39B /* OtherStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherStoryViewController.swift; sourceTree = "<group>"; };
 		500A0EBB291780A50053A39B /* OtherStoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherStoryViewController.xib; sourceTree = "<group>"; };
+		50F2890829178FCC0019C290 /* CacheUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheUtil.swift; sourceTree = "<group>"; };
+		50F2890A2917C58D0019C290 /* AQFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AQFileManager.h; sourceTree = "<group>"; };
+		50F2890B2917C58D0019C290 /* AQFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AQFileManager.m; sourceTree = "<group>"; };
 		C6AC7EC729154078001995BF /* CitrusGrandisMultiplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitrusGrandisMultiplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AC7ECA29154078001995BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6AC7ED129154078001995BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +142,8 @@
 			children = (
 				500A0EAF2916C0FD0053A39B /* CALayer+BorderColor.h */,
 				500A0EB02916C0FD0053A39B /* CALayer+BorderColor.m */,
+				50F2890A2917C58D0019C290 /* AQFileManager.h */,
+				50F2890B2917C58D0019C290 /* AQFileManager.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -147,6 +154,14 @@
 				500A0EB829177D810053A39B /* DrinkBarModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		50F2890729178F2E0019C290 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				50F2890829178FCC0019C290 /* CacheUtil.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		5BDD265F4074BEB69900D692 /* Pods */ = {
@@ -239,6 +254,7 @@
 		C6AC7EFC29154327001995BF /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				50F2890729178F2E0019C290 /* Util */,
 				C6AC7F1629154B3C001995BF /* BaseModule */,
 				C6AC7EFD2915432F001995BF /* TabModule */,
 				C6AC7F0B291544E8001995BF /* TabVC1 */,
@@ -432,8 +448,10 @@
 				500A0EA1291694510053A39B /* AddDrinkViewController.swift in Sources */,
 				C6AC7F112915451B001995BF /* TabViewController2.swift in Sources */,
 				500A0EBC291780A50053A39B /* OtherStoryViewController.swift in Sources */,
+				50F2890929178FCC0019C290 /* CacheUtil.swift in Sources */,
 				C6AC7EF8291542D2001995BF /* MBProgressHUD+XM.m in Sources */,
 				C6AC7EDF29154187001995BF /* Macro.swift in Sources */,
+				50F2890C2917C58D0019C290 /* AQFileManager.m in Sources */,
 				500A0E9F291645210053A39B /* DrinkDetailViewController.swift in Sources */,
 				C6AC7F1A29154B3C001995BF /* AQBaseViewController.swift in Sources */,
 				500A0EAB2916B7600053A39B /* MakeDrinkVC.swift in Sources */,
@@ -598,7 +616,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D83JHSRAX2;
+				DEVELOPMENT_TEAM = S4QBH8P8Y9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CitrusGrandisMultiplication/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -610,7 +628,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.CGM.CitrusGrandisMultiplication;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.CGM.CitrusGrandisMultiplicatio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "CitrusGrandisMultiplication/CitrusGrandisMultiplication-Bridging-Header.h";
@@ -639,7 +657,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.CGM.CitrusGrandisMultiplication;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.CGM.CitrusGrandisMultiplicatio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "CitrusGrandisMultiplication/CitrusGrandisMultiplication-Bridging-Header.h";

@@ -235,8 +235,11 @@ class AddDrinkViewController: AQBaseViewController, UINavigationControllerDelega
 
 extension AddDrinkViewController: UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let path = (info[.imageURL] as? URL)?.absoluteString
-        drinkModel.image = path
+        let path = (info[.imageURL] as? URL)?.absoluteString.replacingOccurrences(of: "file://", with: "")
+        let sandboxPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
+        let toPath = sandboxPath?.appending("/\((info[.imageURL] as? URL)?.lastPathComponent ?? "")")
+        try? AQFileManager.copyItem(atPath: path!, toPath: toPath!)
+        drinkModel.image = toPath
         photoView.image = info[.originalImage] as? UIImage
         picker.dismiss(animated: true)
     }

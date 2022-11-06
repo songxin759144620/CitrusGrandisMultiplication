@@ -74,8 +74,11 @@ class OtherStoryViewController: AQBaseViewController {
 
 extension OtherStoryViewController: UIImagePickerControllerDelegate , UINavigationControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let path = (info[.imageURL] as? URL)?.absoluteString
-        drinkBarModel.img = path
+        let path = (info[.imageURL] as? URL)?.absoluteString.replacingOccurrences(of: "file://", with: "")
+        let sandboxPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
+        let toPath = sandboxPath?.appending("/\((info[.imageURL] as? URL)?.lastPathComponent ?? "")")
+        try? AQFileManager.copyItem(atPath: path!, toPath: toPath!)
+        drinkBarModel.img = toPath
         picker.dismiss(animated: true)
     }
 }

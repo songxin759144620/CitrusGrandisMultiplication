@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import HandyJSON
 
-struct MakeModel {
+struct MakeModel: HandyJSON {
     var title: String?
     var step: String?
     var tips: String?

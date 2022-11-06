@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import HandyJSON
 
-struct DrinkModel {
+struct DrinkModel: HandyJSON {
     var title: String?
     var subTitle: String?
     var content: String?

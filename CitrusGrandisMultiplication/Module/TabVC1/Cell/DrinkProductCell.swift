@@ -11,11 +11,7 @@ class DrinkProductCell: UITableViewCell {
     var drinkModel: DrinkModel? {
         didSet {
             if drinkModel?.image?.hasPrefix("file://") == true {
-                if #available(iOS 16.0, *) {
-                    proImg.image = UIImage(contentsOfFile: drinkModel?.image?.replacing("file://", with: "") ?? "")
-                } else {
-                    // Fallback on earlier versions
-                }
+                proImg.image = UIImage(contentsOfFile: drinkModel?.image?.replacingOccurrences(of: "file://", with: "") ?? "")
             }else{
                 proImg.image = UIImage(named: drinkModel?.image ?? "")
             }
@@ -26,6 +22,8 @@ class DrinkProductCell: UITableViewCell {
             priceLa.text = String(format: "%@$/cup", drinkModel?.price ?? "22")
         }
     }
+    
+    var deleteBlock: (()->Void)?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -40,11 +38,12 @@ class DrinkProductCell: UITableViewCell {
     }
     
     private func setUpUI() {
-        _ = [bgImg, proImg, title, subTitle, line, content, priceLa, closeBtn, detailBtn]
+        _ = [bgImg, title, subTitle, line, content, priceLa, closeBtn, detailBtn,proImg]
     }
     
     private lazy var bgImg: UIImageView = {
         let img = UIImageView(image: UIImage(named: "tab1色块"))
+        img.isUserInteractionEnabled = true
         contentView.addSubview(img)
         img.snp.makeConstraints { make in
             make.edges.equalTo(UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15))
@@ -138,14 +137,14 @@ class DrinkProductCell: UITableViewCell {
     private lazy var closeBtn: UIButton = {
         let btn = UIButton(type: .custom)
         btn.setImage(UIImage(named: "tab1白色差号 1"), for: .normal)
-        btn.addTapGesture {
-            
+        btn.addTapGesture { [weak self] in
+            self?.deleteBlock?()
         }
         bgImg.addSubview(btn)
         btn.snp.makeConstraints { make in
             make.size.equalTo(CGSize(width: 44, height: 44))
             make.top.equalToSuperview()
-            make.left.equalTo(250)
+            make.left.equalTo(SCREEN_Width * 258 / 414.0)
         }
         
         return btn

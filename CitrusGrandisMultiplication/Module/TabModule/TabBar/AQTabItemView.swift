@@ -47,7 +47,9 @@ class AQTabItemView: UIView {
         let img = UIImageView()
         self.addSubview(img)
         img.snp.makeConstraints { make in
-            make.center.equalTo(self)
+            make.centerX.equalToSuperview()
+            make.size.equalTo(CGSize(width: 20, height: 20))
+            make.top.equalToSuperview().offset(5)
         }
         
         return img
