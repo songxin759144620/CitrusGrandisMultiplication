@@ -37,6 +37,7 @@ let MainTitleColor = UIColor(rgbString: "0x48627C")     //主标题颜色
 let MainSubTitleColor = UIColor(rgbString: "0x939EA9")  //副标题颜色
 let MainDividerColor = UIColor(rgbString: "0xF9F9F9")   //分割线的颜色
 
+
 // MARK: toast
 func toast(_ msg: String) {
     toast(msg, inView: nil)
@@ -72,6 +73,10 @@ func loading(_ inView: UIView? = nil) {
 
 func loadingCancel(_ inView: UIView? = nil) {
     MBProgressHUD.xm_hideAllHUD(inView)
+}
+
+func adaptWidth(_ x: CGFloat) -> CGFloat {
+    return SCREEN_Width * x / 414.0
 }
 
 let mainColor = 0xacbc56.color

@@ -13,7 +13,8 @@
             <connections>
                 <outlet property="addPictureBtn" destination="vDr-Vg-Rb6" id="DM2-W9-j4N"/>
                 <outlet property="contentField" destination="64h-Kr-OiW" id="Aec-OJ-EsP"/>
-                <outlet property="dateField" destination="zHg-mu-Cuz" id="etD-tw-8dX"/>
+                <outlet property="dateBtn" destination="z8s-DE-WAy" id="uBY-Wl-tMa"/>
+                <outlet property="imagev" destination="vnL-Lh-e5q" id="ZIG-eq-i9X"/>
                 <outlet property="titleField" destination="t52-f7-YSp" id="PYt-j5-vne"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -54,7 +55,7 @@
                         <constraint firstAttribute="height" constant="74" id="frL-X9-uQs"/>
                     </constraints>
                 </imageView>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t52-f7-YSp">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t52-f7-YSp">
                     <rect key="frame" x="66.666666666666686" y="132" width="260" height="21"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -82,14 +83,6 @@
                         <constraint firstAttribute="height" constant="2" id="hdD-tn-JJe"/>
                     </constraints>
                 </view>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zHg-mu-Cuz">
-                    <rect key="frame" x="46.666666666666657" y="362" width="300" height="21"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90g-gV-u4g">
                     <rect key="frame" x="46.666666666666657" y="391" width="300" height="2"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -106,10 +99,29 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Add picture"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8s-DE-WAy">
+                    <rect key="frame" x="46.666666666666657" y="356" width="300" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="OQi-So-bfJ"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Enter Date"/>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vnL-Lh-e5q">
+                    <rect key="frame" x="146.66666666666666" y="497" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="FNJ-D7-dJI"/>
+                        <constraint firstAttribute="height" constant="100" id="JKg-N8-nUh"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="z8s-DE-WAy" firstAttribute="top" secondItem="ASP-3Y-FbW" secondAttribute="top" constant="27" id="2oL-Ig-zFl"/>
+                <constraint firstItem="vnL-Lh-e5q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4Hk-KL-I24"/>
                 <constraint firstItem="ogG-XS-f0B" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4Rl-yC-Mhd"/>
                 <constraint firstItem="ToY-2Y-xvM" firstAttribute="trailing" secondItem="ogG-XS-f0B" secondAttribute="trailing" id="81A-lh-kZP"/>
                 <constraint firstItem="qqa-3A-Be4" firstAttribute="trailing" secondItem="5oV-1x-c60" secondAttribute="trailing" id="CjM-YP-8f9"/>
@@ -122,10 +134,10 @@
                 <constraint firstAttribute="bottom" secondItem="W9a-60-DHQ" secondAttribute="bottom" id="NMG-KV-F3X"/>
                 <constraint firstItem="vDr-Vg-Rb6" firstAttribute="bottom" secondItem="6gM-hF-H9o" secondAttribute="bottom" id="SRE-24-z1O"/>
                 <constraint firstItem="90g-gV-u4g" firstAttribute="leading" secondItem="ASP-3Y-FbW" secondAttribute="leading" id="TMw-BT-P99"/>
-                <constraint firstItem="zHg-mu-Cuz" firstAttribute="bottom" secondItem="ASP-3Y-FbW" secondAttribute="bottom" constant="-20" id="UgP-lf-LLG"/>
                 <constraint firstItem="6gM-hF-H9o" firstAttribute="top" secondItem="ASP-3Y-FbW" secondAttribute="bottom" id="YGE-7w-Lal"/>
                 <constraint firstItem="64h-Kr-OiW" firstAttribute="trailing" secondItem="ogG-XS-f0B" secondAttribute="trailing" constant="-10" id="YlD-yd-et2"/>
                 <constraint firstItem="ASP-3Y-FbW" firstAttribute="top" secondItem="ogG-XS-f0B" secondAttribute="bottom" id="ZPC-br-qRt"/>
+                <constraint firstItem="z8s-DE-WAy" firstAttribute="leading" secondItem="ASP-3Y-FbW" secondAttribute="leading" id="dkI-cr-StF"/>
                 <constraint firstItem="W9a-60-DHQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eIu-ZR-T22"/>
                 <constraint firstItem="6gM-hF-H9o" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eTa-Xz-xBa"/>
                 <constraint firstItem="ASP-3Y-FbW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eW5-f7-jAZ"/>
@@ -134,10 +146,10 @@
                 <constraint firstItem="t52-f7-YSp" firstAttribute="bottom" secondItem="5oV-1x-c60" secondAttribute="bottom" constant="-20" id="fCv-EI-Aje"/>
                 <constraint firstItem="5oV-1x-c60" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="fPm-FZ-SmX"/>
                 <constraint firstItem="90g-gV-u4g" firstAttribute="trailing" secondItem="ASP-3Y-FbW" secondAttribute="trailing" id="fUo-w1-Ada"/>
-                <constraint firstItem="zHg-mu-Cuz" firstAttribute="leading" secondItem="ASP-3Y-FbW" secondAttribute="leading" id="hiR-nG-hhm"/>
+                <constraint firstItem="vnL-Lh-e5q" firstAttribute="top" secondItem="6gM-hF-H9o" secondAttribute="bottom" constant="20" id="hSP-t2-jbN"/>
                 <constraint firstItem="64h-Kr-OiW" firstAttribute="bottom" secondItem="ogG-XS-f0B" secondAttribute="bottom" constant="-15" id="hve-xn-WEA"/>
                 <constraint firstItem="qqa-3A-Be4" firstAttribute="leading" secondItem="5oV-1x-c60" secondAttribute="leading" id="nKJ-m4-7cv"/>
-                <constraint firstItem="zHg-mu-Cuz" firstAttribute="trailing" secondItem="ASP-3Y-FbW" secondAttribute="trailing" id="pGY-Mn-9em"/>
+                <constraint firstItem="z8s-DE-WAy" firstAttribute="trailing" secondItem="ASP-3Y-FbW" secondAttribute="trailing" id="odH-8w-Xgh"/>
                 <constraint firstItem="t52-f7-YSp" firstAttribute="centerX" secondItem="5oV-1x-c60" secondAttribute="centerX" id="pgp-nC-eJv"/>
                 <constraint firstItem="64h-Kr-OiW" firstAttribute="top" secondItem="ogG-XS-f0B" secondAttribute="top" constant="30" id="sTl-HW-tSK"/>
                 <constraint firstItem="5oV-1x-c60" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tXK-hI-CYt"/>

@@ -15,12 +15,9 @@ class TabViewController1: AQBaseViewController {
         dataSource.append(DrinkModel(title: "Strawberry juice", subTitle: "Ingredients: strawberry, water,sugar, coconut Sweet, pigment", content: "Strawberry juice is standard in summer, which is very popular Love of light people.", image: "tab1-2", price: "15"))
         dataSource.append(DrinkModel(title: "Lime water", subTitle: "Ingredients: lemon, water, sugar, coriander, cream", content: "Lime juice is a kind of strange drink People dare not try easily.", image: "tab1-3", price: "22"))
         
-        if CacheUtil.share.drinkList() == nil {
-            CacheUtil.share.writeDrinkList(dataSource)
-        }else{
+        if CacheUtil.share.drinkList() != nil {
             dataSource = CacheUtil.share.drinkList()!
         }
-        
         _ = [bgImg, tableView]
         
         navBarType = .light
@@ -31,6 +28,9 @@ class TabViewController1: AQBaseViewController {
         let vc = AddDrinkViewController()
         vc.addDrinkBlock = { [weak self] drinkModel in
             if drinkModel != nil {
+                if CacheUtil.share.drinkList() == nil {
+                    self?.dataSource.removeAll()
+                }
                 self?.dataSource.append(drinkModel!)
                 CacheUtil.share.writeDrinkList(self?.dataSource ?? [DrinkModel]())
                 self?.tableView.reloadData()

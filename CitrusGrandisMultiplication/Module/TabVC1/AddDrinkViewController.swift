@@ -67,6 +67,7 @@ class AddDrinkViewController: AQBaseViewController, UINavigationControllerDelega
     private lazy var name: CustomField = {
         let field = CustomField()
         field.font = 17.font
+        field.delegate = self
         contentView.addSubview(field)
         field.snp.makeConstraints { make in
             make.bottom.equalTo(namePre)
@@ -231,6 +232,16 @@ class AddDrinkViewController: AQBaseViewController, UINavigationControllerDelega
         
         return btn
     }()
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+}
+
+extension AddDrinkViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+    }
 }
 
 extension AddDrinkViewController: UIImagePickerControllerDelegate {

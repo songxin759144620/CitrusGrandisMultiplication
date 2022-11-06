@@ -54,12 +54,13 @@ class DrinkProductCell: UITableViewCell {
     
     private lazy var proImg: UIImageView = {
         let img = UIImageView()
-        img.contentMode = .scaleAspectFit
+        img.contentMode = .scaleAspectFill
+        img.clipsToBounds = true
         bgImg.addSubview(img)
         img.snp.makeConstraints { make in
-            make.top.equalTo(80)
+            make.top.equalTo(95)
             make.left.equalTo(30)
-            make.size.equalTo(CGSize(width: 100, height: 100))
+            make.size.equalTo(CGSize(width: 80, height: 80))
         }
         
         return img
@@ -71,7 +72,7 @@ class DrinkProductCell: UITableViewCell {
         la.font = 17.font
         bgImg.addSubview(la)
         la.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
+            make.centerX.equalToSuperview().offset(10)
             make.top.equalTo(32)
         }
         
@@ -85,8 +86,8 @@ class DrinkProductCell: UITableViewCell {
         la.numberOfLines = 0
         bgImg.addSubview(la)
         la.snp.makeConstraints { make in
-            make.left.equalTo(140)
-            make.width.equalTo(150)
+            make.left.equalTo(adaptWidth(160))
+            make.width.equalTo(adaptWidth(130))
             make.top.equalTo(title.snp.bottom).offset(10)
         }
         
@@ -98,7 +99,7 @@ class DrinkProductCell: UITableViewCell {
         v.backgroundColor = mainColor
         bgImg.addSubview(v)
         v.snp.makeConstraints { make in
-            make.size.equalTo(CGSize(width: 200, height: 4))
+            make.size.equalTo(CGSize(width: adaptWidth(200), height: 4))
             make.left.equalTo(95)
             make.top.equalTo(110)
         }
@@ -114,8 +115,8 @@ class DrinkProductCell: UITableViewCell {
         bgImg.addSubview(la)
         la.snp.makeConstraints { make in
             make.top.equalTo(line.snp.bottom).offset(10)
-            make.left.equalTo(140)
-            make.width.equalTo(150)
+            make.left.equalTo(SCREEN_Width * 160 / 414.0)
+            make.width.equalTo(SCREEN_Width * 130 / 414.0)
         }
         
         return la
@@ -144,7 +145,7 @@ class DrinkProductCell: UITableViewCell {
         btn.snp.makeConstraints { make in
             make.size.equalTo(CGSize(width: 44, height: 44))
             make.top.equalToSuperview()
-            make.left.equalTo(SCREEN_Width * 258 / 414.0)
+            make.left.equalTo(SCREEN_Width * 263 / 414.0)
         }
         
         return btn

@@ -11,11 +11,7 @@ class DrinkDetailViewController: AQBaseViewController {
     var drinkModel: DrinkModel? {
         didSet {
             if drinkModel?.image?.hasPrefix("file://") == true {
-                if #available(iOS 16.0, *) {
-                    proImg.image = UIImage(contentsOfFile: drinkModel?.image?.replacing("file://", with: "") ?? "")
-                } else {
-                    // Fallback on earlier versions
-                }
+                proImg.image = UIImage(contentsOfFile: drinkModel?.image?.replacingOccurrences(of: "file://", with: "") ?? "")
             }else{
                 proImg.image = UIImage(named: drinkModel?.image ?? "")
             }

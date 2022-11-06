@@ -25,6 +25,14 @@ class MakeDrinkVC: AQBaseViewController {
         showLeftBtn()
         titleStr = "Make"
         
+        titleTextField.delegate = self
+        textView.delegate = self
+        tipsTextField.delegate = self
+        
+        
+        titleTextField.attributedPlaceholder = NSAttributedString(string: "Enter title",attributes: [.foregroundColor:mainColor])
+        tipsTextField.attributedPlaceholder = NSAttributedString(string: "Enter tips",attributes: [.foregroundColor:mainColor])
+        
         
         // Do any additional setup after loading the view.
         
@@ -56,7 +64,7 @@ class MakeDrinkVC: AQBaseViewController {
         }
     }
 
-
+    
     /*
     // MARK: - Navigation
 
@@ -66,5 +74,18 @@ class MakeDrinkVC: AQBaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+}
 
+extension MakeDrinkVC: UITextFieldDelegate,UITextViewDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing( true)
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        textView.text = ""
+    }
 }
