@@ -41,14 +41,14 @@ class CacheUtil {
      */
     let MakeDrink = "MakeDrink"
     
-    func markDrinkModel() -> MakeModel?  {
+    func markDrinkModel() -> [MakeModel]?  {
         let listStr = userDefault.object(forKey: MakeDrink) as? String
-        let listModel = MakeModel.deserialize(from: listStr?.toJSONObject() as? NSDictionary)
+        let listModel = [MakeModel].deserialize(from: listStr) as? [MakeModel]
         return listModel
     }
     
-    func setMarkDrinkModel(_ model: MakeModel) {
-        userDefault.set(model.toJSONString(), forKey: MakeDrink)
+    func setMarkDrinkModel(_ model: [MakeModel]) {
+        userDefault.set(model.toJSON().toJSONString, forKey: MakeDrink)
     }
     
     
@@ -57,14 +57,14 @@ class CacheUtil {
      */
     let DrinkBarCache = "DrinkBarCache"
     
-    func drinkBarData() -> DrinkBarModel?  {
+    func drinkBarData() -> [DrinkBarModel]?  {
         let listStr = userDefault.object(forKey: DrinkBarCache) as? String
-        let listModel = DrinkBarModel.deserialize(from: listStr?.toJSONObject() as? NSDictionary)
+        let listModel = [DrinkBarModel].deserialize(from: listStr) as? [DrinkBarModel]
         return listModel
     }
     
-    func setDrinkBarData(_ model: DrinkBarModel) {
-        userDefault.set(model.toJSONString(), forKey: DrinkBarCache)
+    func setDrinkBarData(_ model: [DrinkBarModel]) {
+        userDefault.set(model.toJSON().toJSONString, forKey: DrinkBarCache)
     }
     
 }

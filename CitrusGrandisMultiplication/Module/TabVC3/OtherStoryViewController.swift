@@ -68,6 +68,10 @@ class OtherStoryViewController: AQBaseViewController {
             toast("Add picture")
             return
         }
+        if timeStr == nil {
+            toast("Enter Date")
+            return
+        }
         
         drinkBarModel.title = titleField.text
         drinkBarModel.des = contentField.text
@@ -103,7 +107,9 @@ extension OtherStoryViewController: UITextFieldDelegate,UITextViewDelegate {
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
-        textView.text = ""
+        if textView.text == "Enter content" {
+            textView.text = ""
+        }
     }
 }
 

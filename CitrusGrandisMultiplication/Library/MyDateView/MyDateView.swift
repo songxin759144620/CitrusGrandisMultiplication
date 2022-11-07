@@ -179,7 +179,7 @@ class MyDateView: BasePickView, UIPickerViewDataSource, UIPickerViewDelegate {
         }else{
             text = "\(row + 1)日"
         }
-       
+        
         let label = UILabel.init()
         label.textAlignment = .center
         label.textColor = .black

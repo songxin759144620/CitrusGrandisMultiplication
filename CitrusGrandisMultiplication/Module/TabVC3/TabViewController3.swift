@@ -11,24 +11,11 @@ class TabViewController3: AQBaseViewController {
 
     @IBOutlet weak var arrbg: UIImageView!
     @IBOutlet weak var arr: UIImageView!
-    @IBOutlet weak var titleLa: UILabel!
-    @IBOutlet weak var dateBtn: UIButton!
-    @IBOutlet weak var des: UILabel!
-    @IBOutlet weak var contentImg: UIImageView!
     @IBOutlet weak var pushBtn: UIImageView!
     
-    var drinkBarModel: DrinkBarModel? {
-        didSet {
-            titleLa.text = drinkBarModel?.title
-            if drinkBarModel?.img?.hasPrefix("file://") == true {
-                contentImg.image = UIImage(contentsOfFile: CacheUtil.sandboxPath?.appending(drinkBarModel?.img?.replacingOccurrences(of: "file://", with: "") ?? "") ?? "")!
-            }else{
-                contentImg.image = UIImage(named: drinkBarModel?.img ?? "")
-            }
-            des.text = drinkBarModel?.des
-            dateBtn.setTitle(drinkBarModel?.date, for: .normal)
-        }
-    }
+    
+    
+    var dataSource: [DrinkBarModel] = [DrinkBarModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,12 +27,12 @@ class TabViewController3: AQBaseViewController {
             make.left.equalTo(10)
             make.size.equalTo(CGSize(width: 40, height: 28))
         }
-        drinkBarModel = DrinkBarModel(title: "The past of orange",img: "tab3-2",des: "This is the story I don't like to recall. It makes me sad. My favorite orange The juice maker died, and I can't drink any more.",date: "2022-10-30")
-        des.numberOfLines = 0
+        let model = DrinkBarModel(title: "The past of orange",img: "tab3-2",des: "This is the story I don't like to recall. It makes me sad. My favorite orange The juice maker died, and I can't drink any more.",date: "2022-10-30")
+        
         if CacheUtil.share.drinkBarData() == nil {
-            CacheUtil.share.setDrinkBarData(drinkBarModel!)
+            dataSource.append(model)
         }else{
-            drinkBarModel = CacheUtil.share.drinkBarData()
+            dataSource = CacheUtil.share.drinkBarData()!
         }
         
         pushBtn.isUserInteractionEnabled = true
@@ -53,14 +40,39 @@ class TabViewController3: AQBaseViewController {
             let vc = OtherStoryViewController()
             vc.hidesBottomBarWhenPushed = true
             vc.addStoryBlock = { [weak self] model in
-                self?.drinkBarModel = model
-                CacheUtil.share.setDrinkBarData(model)
+                guard let self = self else { return }
+                
+                if CacheUtil.share.drinkBarData() == nil {
+                    self.dataSource.removeAll()
+                }
+                self.dataSource.append(model)
+                CacheUtil.share.setDrinkBarData(self.dataSource)
+                self.tableView.reloadData()
             }
             self?.navigationController?.pushViewController(vc, animated: true)
         }
+        
+        _ = tableView
     }
 
-
+    private lazy var tableView: UITableView = {
+        let table = UITableView(frame: .zero, style: .plain)
+        table.delegate = self
+        table.dataSource = self
+        table.register(UINib(nibName: "Tab3Cell", bundle: nil), forCellReuseIdentifier: "Tab3Cell")
+        table.estimatedRowHeight = 0
+        table.estimatedSectionFooterHeight = 0
+        table.estimatedSectionHeaderHeight = 0
+        table.separatorStyle = .none
+        table.backgroundColor = .clear
+        view.addSubview(table)
+        table.snp.makeConstraints { make in
+            make.left.right.bottom.equalToSuperview()
+            make.top.equalTo(NavBarHeight + 60)
+        }
+        
+        return table
+    }()
     /*
     // MARK: - Navigation
 
@@ -71,4 +83,20 @@ class TabViewController3: AQBaseViewController {
     }
     */
 
+}
+
+extension TabViewController3: UITableViewDelegate,UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataSource.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Tab3Cell", for: indexPath) as? Tab3Cell
+        cell?.drinkBarModel = dataSource[indexPath.row]
+        return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 405
+    }
 }

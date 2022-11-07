@@ -28,6 +28,9 @@
 		50F289142917EF610019C290 /* MyDateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F289102917EF610019C290 /* MyDateTimeView.swift */; };
 		50F289152917EF610019C290 /* MyTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F289112917EF610019C290 /* MyTimeView.swift */; };
 		BA411A9B163670059390D1C1 /* libPods-CitrusGrandisMultiplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FE154F53EFA9EC3359CF5E /* libPods-CitrusGrandisMultiplication.a */; };
+		C6579E652918A42C0052102B /* Tab2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6579E642918A42C0052102B /* Tab2Cell.swift */; };
+		C6579E682918A8CC0052102B /* Tab3Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6579E662918A8CC0052102B /* Tab3Cell.swift */; };
+		C6579E692918A8CC0052102B /* Tab3Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6579E672918A8CC0052102B /* Tab3Cell.xib */; };
 		C6AC7ECB29154078001995BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC7ECA29154078001995BF /* AppDelegate.swift */; };
 		C6AC7ED229154078001995BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7ED029154078001995BF /* Main.storyboard */; };
 		C6AC7ED429154079001995BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AC7ED329154079001995BF /* Assets.xcassets */; };
@@ -77,6 +80,9 @@
 		50F2890F2917EF610019C290 /* BasePickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePickView.swift; sourceTree = "<group>"; };
 		50F289102917EF610019C290 /* MyDateTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDateTimeView.swift; sourceTree = "<group>"; };
 		50F289112917EF610019C290 /* MyTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTimeView.swift; sourceTree = "<group>"; };
+		C6579E642918A42C0052102B /* Tab2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2Cell.swift; sourceTree = "<group>"; };
+		C6579E662918A8CC0052102B /* Tab3Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3Cell.swift; sourceTree = "<group>"; };
+		C6579E672918A8CC0052102B /* Tab3Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Tab3Cell.xib; sourceTree = "<group>"; };
 		C6AC7EC729154078001995BF /* CitrusGrandisMultiplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitrusGrandisMultiplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AC7ECA29154078001995BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6AC7ED129154078001995BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -160,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				500A0EB829177D810053A39B /* DrinkBarModel.swift */,
+				C6579E662918A8CC0052102B /* Tab3Cell.swift */,
+				C6579E672918A8CC0052102B /* Tab3Cell.xib */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -323,6 +331,7 @@
 				500A0EA92916B7600053A39B /* MakeDrinkVC.swift */,
 				500A0EAA2916B7600053A39B /* MakeDrinkVC.xib */,
 				500A0EA52916A9CF0053A39B /* StarView.swift */,
+				C6579E642918A42C0052102B /* Tab2Cell.swift */,
 			);
 			path = TabVC2;
 			sourceTree = "<group>";
@@ -424,6 +433,7 @@
 				C6AC7EF2291542D2001995BF /* MBHUD_Info@2x.png in Resources */,
 				C6AC7EF0291542D2001995BF /* MBHUD_Success@2x.png in Resources */,
 				C6AC7ED429154079001995BF /* Assets.xcassets in Resources */,
+				C6579E692918A8CC0052102B /* Tab3Cell.xib in Resources */,
 				C6AC7EF6291542D2001995BF /* MBHUD_Warn@2x.png in Resources */,
 				C6AC7EF1291542D2001995BF /* MBHUD_Info@3x.png in Resources */,
 				C6AC7ED229154078001995BF /* Main.storyboard in Resources */,
@@ -484,6 +494,7 @@
 				500A0EB5291779650053A39B /* TabViewController3.swift in Sources */,
 				C6AC7EEF291542D2001995BF /* MBProgressHUD.m in Sources */,
 				C6AC7F0F29154514001995BF /* TabViewController1.swift in Sources */,
+				C6579E652918A42C0052102B /* Tab2Cell.swift in Sources */,
 				500A0EB929177D810053A39B /* DrinkBarModel.swift in Sources */,
 				500A0E9A291636000053A39B /* DrinkProductCell.swift in Sources */,
 				C6AC7F032915432F001995BF /* AQTabItemView.swift in Sources */,
@@ -493,6 +504,7 @@
 				C6AC7F052915432F001995BF /* AQTabbar.swift in Sources */,
 				500A0EA42916A82C0053A39B /* MakeModel.swift in Sources */,
 				500A0EB12916C0FD0053A39B /* CALayer+BorderColor.m in Sources */,
+				C6579E682918A8CC0052102B /* Tab3Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

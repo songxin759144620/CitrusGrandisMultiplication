@@ -86,6 +86,8 @@ extension MakeDrinkVC: UITextFieldDelegate,UITextViewDelegate {
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
-        textView.text = ""
+        if textView.text == "Enter step" {
+            textView.text = ""
+        }
     }
 }
