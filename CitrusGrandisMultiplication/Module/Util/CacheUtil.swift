@@ -17,10 +17,9 @@ class cat: HandyJSON {
 
 class CacheUtil {
     static let share = CacheUtil()
-    let sandboxPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
+    static let sandboxPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
     
     var userDefault = UserDefaults.standard
-    
     
     /**
         首页数据

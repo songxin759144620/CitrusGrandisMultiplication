@@ -11,7 +11,7 @@ class DrinkProductCell: UITableViewCell {
     var drinkModel: DrinkModel? {
         didSet {
             if drinkModel?.image?.hasPrefix("file://") == true {
-                proImg.image = UIImage(contentsOfFile: drinkModel?.image?.replacingOccurrences(of: "file://", with: "") ?? "")
+                proImg.image = UIImage(contentsOfFile: CacheUtil.sandboxPath?.appending(drinkModel?.image?.replacingOccurrences(of: "file://", with: "") ?? "") ?? "")
             }else{
                 proImg.image = UIImage(named: drinkModel?.image ?? "")
             }

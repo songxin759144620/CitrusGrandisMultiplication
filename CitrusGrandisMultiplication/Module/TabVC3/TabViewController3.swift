@@ -21,7 +21,7 @@ class TabViewController3: AQBaseViewController {
         didSet {
             titleLa.text = drinkBarModel?.title
             if drinkBarModel?.img?.hasPrefix("file://") == true {
-                contentImg.image = UIImage(contentsOfFile: drinkBarModel?.img?.replacingOccurrences(of: "file://", with: "") ?? "")!
+                contentImg.image = UIImage(contentsOfFile: CacheUtil.sandboxPath?.appending(drinkBarModel?.img?.replacingOccurrences(of: "file://", with: "") ?? "") ?? "")!
             }else{
                 contentImg.image = UIImage(named: drinkBarModel?.img ?? "")
             }

@@ -250,7 +250,7 @@ extension AddDrinkViewController: UIImagePickerControllerDelegate {
         let sandboxPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
         let toPath = sandboxPath?.appending("/\((info[.imageURL] as? URL)?.lastPathComponent ?? "")")
         try? AQFileManager.copyItem(atPath: path!, toPath: toPath!)
-        drinkModel.image = toPath
+        drinkModel.image = "file:///\((info[.imageURL] as? URL)?.lastPathComponent ?? "")"
         photoView.image = info[.originalImage] as? UIImage
         picker.dismiss(animated: true)
     }

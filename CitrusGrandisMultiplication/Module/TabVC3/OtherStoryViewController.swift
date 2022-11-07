@@ -113,7 +113,7 @@ extension OtherStoryViewController: UIImagePickerControllerDelegate , UINavigati
         let sandboxPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
         let toPath = sandboxPath?.appending("/\((info[.imageURL] as? URL)?.lastPathComponent ?? "")")
         try? AQFileManager.copyItem(atPath: path!, toPath: toPath!)
-        drinkBarModel.img = toPath
+        drinkBarModel.img = "file:///\((info[.imageURL] as? URL)?.lastPathComponent ?? "")"
         imagev.image = info[.originalImage] as? UIImage
         picker.dismiss(animated: true)
     }

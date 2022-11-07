@@ -182,6 +182,7 @@ class MyDateView: BasePickView, UIPickerViewDataSource, UIPickerViewDelegate {
        
         let label = UILabel.init()
         label.textAlignment = .center
+        label.textColor = .black
         label.font = UIFont.systemFont(ofSize: 16)
         label.text = text
         return label
